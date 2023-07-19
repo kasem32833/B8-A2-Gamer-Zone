@@ -121,7 +121,9 @@ nav{
 /* We are gamer */
 .we-are-gamer{
     background-color:#fdf8fa ;
-    padding: 95px 0;
+    padding-top:95px;
+    padding-bottom:95px;
+    margin-bottom: 120px;
 }
 .gamer-image img{
     max-width: 100%;
@@ -136,26 +138,24 @@ nav{
     font-size: 48px;
     font-weight: 700;
 }
+.gamer-content{
+    display: flex;
+    justify-content: space-between;
+    gap: 52px;
+    align-items: center;
+}
+.gamer-text{
+    text-align: right;
+    max-width: 520px;
+}
 .gamer-text .section-description{
     color: #534C64;
     text-align: right;
     font-size: 1rem;
     font-weight: 400;
     line-height: 30px;
-    margin-bottom: 52px;
+    margin-bottom: 32px;
 }
-
-.gamer-content{
-    display: flex;
-    justify-content: space-between;
-    gap: 52px;
-    align-items: center;
-    margin-bottom: 120px;
-}
-.gamer-text{
-    text-align: right;
-}
-
 .know-more{
 font-size: 20px;
 font-weight: 600;
@@ -166,19 +166,65 @@ margin-bottom: 24px;
 /* Online Games section style */
 .section-heading{
     text-align: center;
-    max-width: 50%;
+    min-width: 50%;
     margin: 0 auto;
     margin-bottom: 3rem;
+}
+.section-heading h2{
+    font-size: 48px;
+    margin-bottom: 10px;
+}
+.funny-video{
+    background: linear-gradient(180deg, #F948B2 0%, #8758F1 100%);
+    background-clip: text;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    font-size: 48px;
+    font-weight: 700;
+}
+.section-heading p{
+    color: #534C64;
+    text-align: center;
+    font-size: 1rem;
+    line-height: 30px;
 }
 .games-carts-section{
     display: flex;
     justify-content: space-between;
     align-items: center;
+    gap:24px;
 }
 .single-cart img{
     max-width: 100%;
-    
+    transition: .3s;
 }
+.overlay-cart{
+    position: relative;
+}
+.overlay-cart:hover .img-overlay{
+    visibility: visible;
+}
+.img-overlay{
+    background-color: #0B0223;
+    opacity: 50%;
+    border-radius: 12px;
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    color: #fff;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    visibility:hidden ;
+
+}
+/* .single-cart:hover{
+    background-color: #0B0223;
+    opacity: 10;
+    border: 2px solid #F948B2;
+} */
 /* instant play section design */
 .instant-play,
 .anytime-play{
