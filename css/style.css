@@ -20,7 +20,7 @@ body{
     --secondary-color:#4EC5F7;  
 }
 .container{
-    max-width: 1440px;
+    max-width: 1200px;
     margin: 0 auto;
 }
 /* Nav area style */
@@ -66,6 +66,7 @@ nav{
 .banner-area{
     background-image: url('../images/header-bg.png');
     background-position: left;
+    background-size: cover;
     background-repeat: no-repeat;
 
 }
@@ -116,17 +117,50 @@ nav{
 .btn-secondary{
     background-color: var(--secondary-color);
 }
+
+/* We are gamer */
 .we-are-gamer{
     background-color:#fdf8fa ;
+    padding: 95px 0;
 }
+.gamer-image img{
+    max-width: 100%;
+}
+.gamer-text .section-title{
+    background: linear-gradient(180deg, #F948B2 0%, #8758F1 100%);
+    background-clip: text;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    text-align: right;
+    font-family: Work Sans;
+    font-size: 48px;
+    font-weight: 700;
+}
+.gamer-text .section-description{
+    color: #534C64;
+    text-align: right;
+    font-size: 1rem;
+    font-weight: 400;
+    line-height: 30px;
+    margin-bottom: 52px;
+}
+
 .gamer-content{
     display: flex;
     justify-content: space-between;
+    gap: 52px;
     align-items: center;
     margin-bottom: 120px;
 }
 .gamer-text{
     text-align: right;
+}
+
+.know-more{
+font-size: 20px;
+font-weight: 600;
+text-transform: uppercase;
+margin-bottom: 24px;
 }
 
 /* Online Games section style */
@@ -287,3 +321,5 @@ p.footer-logo-white{
 .copyright-text{
     color: rgba(255, 255, 255, 0.60);
 }
+
+
