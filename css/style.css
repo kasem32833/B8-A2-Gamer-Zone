@@ -415,5 +415,17 @@ p.footer-logo-white{
         padding: 65px;
         text-align: center;
     }
+    .gamer-container{
+        flex-direction: column;
+    }
+    .gamer-content{
+        text-align: center;
+    }
+    .games-cart-container{
+        padding: 0 20px;
+    }
+    .games-category{
+        grid-template-columns: repeat(2, 1fr);
+    }
     
 }
