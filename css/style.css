@@ -400,3 +400,20 @@ p.footer-logo-white{
 }   
 
 /* `responsive for tablet */
+@media screen and (min-width: 576px ) and (max-width: 992px){
+    .navigation-container{
+        padding:  40px 20px;
+    }
+    .banner-container{
+        flex-direction: column-reverse;
+    }
+    .banner-text{
+        background-image: url('./images/header-bg.png');
+        background-position: center;
+        background-size: cover;
+        background-repeat: no-repeat;
+        padding: 65px;
+        text-align: center;
+    }
+    
+}
